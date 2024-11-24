@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.main-container {
+
+  width: fit-content;
+  height: fit-content;
+
+
+
+
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding-top: 4rem; */
+}
+
+/* .container-two {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  border-bottom: 2px solid black;
+} */
+
+.box {
+  /* background-color: red; */
+  width: 250px;
+  height: 200px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  position: relative;
+}
+
+.left-line {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: -6%;
+  left: 39.5%;
+  height: 261px;
+  z-index: 999;
+  transform: rotate(129deg);
+}
+.center-line {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: 9%;
+  right: 49.9%;
+  height: 183px;
+  z-index: 999;
+}
+
+
+.right-line {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: -6%;
+  right: 39.5%;
+  height: 261px;
+  z-index: 999;
+  transform: rotate(51deg);
+}
+.one {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  margin-right: -243px;
+  position: relative;
+  padding-left: 20px;
+
+}
+
+.oneHoverBox{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease;
+  z-index: -1;
+}
+
+.one:hover .oneHoverBox{
+background-color: pink;
+}
+
+.one:hover .box-inner h4{
+  color: white;
+}
+
+
+.two {
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  border: 2px solid white;
+  padding: 3px;
+  position: relative;
+  /* padding-bottom: 5rem; */
+  /* padding-left: 3rem; */
+  overflow: visible;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+}
+
+.two p {
+  font-size: 13px;
+  width: 90%;
+  /* float: right; */
+  line-height: 14px;
+}
+
+
+
+.three {
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  border: 2px solid white;
+  /* border: 2px solid red; */
+}
+
+.strategy {
+  padding-bottom: 6rem;
+  padding: 1rem;
+  padding-bottom: 8rem;
+}
+
+
+.four {
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  margin-left: -243px;
+  position: relative;
+
+}
+
+.fourdata{
+
+/*padding: 10rem;*/
+  position: absolute;
+  bottom: 20%;
+  left: 39%;
+  transform: translate(21px, 1px);
+
+
+
+}
+
+.box-inner {
+  /* background-color: green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.container-three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 2px solid black; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.five {
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  /* background-color: red; */
+  margin-right: -24%;
+    /* border-top: 2px solid black; */
+}
+
+.six{
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 10px;
+padding-top: 20px;
+
+
+
+}
+  
+
+  .seven{
+      clip-path: polygon(100% 100%, 0 100%, 0 0);
+      padding-left: 20px;
+  }
+
+  .eight {
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  margin-left: -24%;
+  display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+padding-right: 10px;
+padding-top: 20px;
+
+  
+}
+
+.five-line {
+  width: 2px;
+  position: absolute;
+  top: -25%;
+  left: 39.5%;
+  height: 262px;
+  background-color: black;
+  transform: rotate(51deg);
+  z-index: 999;
+}
+
+.six-line {
+  width: 2px;
+  position: absolute;
+  top: 0%;
+  left: 49.9%;
+  height: 177px;
+  background-color: black;
+  /* transform: rotate(51deg); */
+  z-index: 999;
+}
+.seven-line {
+  width: 2px;
+  position: absolute;
+  top: -25%;
+  right: 39.5%;
+  height: 262px;
+  background-color: black;
+  transform: rotate(-51deg);
+  z-index: 999;
+}
+.fiveheading{
+  transform: translateY(-3rem);
+  padding-left: 20px;
+}
+.sixheading{
+float: right;
+}
